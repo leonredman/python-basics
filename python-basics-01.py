@@ -7,3 +7,5 @@ weeks = 50  # Create a variable 'weeks' with value 50
 salary = wage * hours * weeks  # Compute salary
 print('Salary is:', end=' ')   # Print "Salary is:" on the screen
 print(salary)                  # Print salary on the screen
+
+
