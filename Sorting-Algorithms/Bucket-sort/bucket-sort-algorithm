@@ -1,0 +1,27 @@
+BucketSort(numbers, numbersSize, bucketCount) {
+  if (numbersSize < 1)
+     return
+
+  buckets = Create list of bucketCount buckets
+
+  // Find the maximum value
+  maxValue = numbers[0]
+  for (i = 1; i < numbersSize; i++) {
+     if (numbers[i] > maxValue)
+        maxValue = numbers[i]
+  }
+
+  // Put each number in a bucket
+  for each (number in numbers) {
+     index = floor(number * bucketCount / (maxValue + 1))
+     Append number to buckets[index]
+  }
+
+  // Sort each bucket
+  for each (bucket in buckets)
+     Sort(bucket)
+
+  // Combine all buckets back into numbers list
+  result = Concatenate all buckets together
+  Copy result to numbers
+}
