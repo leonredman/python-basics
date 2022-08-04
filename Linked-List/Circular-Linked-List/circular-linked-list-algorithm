@@ -1,0 +1,8 @@
+CircularListTraverse(head) {
+   current = head
+   do {
+      visit current
+      current = current->next
+   } while (current != head)
+}
+

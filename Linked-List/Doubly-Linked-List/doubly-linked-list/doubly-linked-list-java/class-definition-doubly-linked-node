@@ -1,0 +1,21 @@
+class Node {
+   public int data;
+   public Node next;
+   public Node previous;
+
+   public Node(int initialData) {
+      data = initialData;
+      next = null;
+      previous = null;
+   }
+}
+
+class LinkedList {
+   private Node head;
+   private Node tail;
+    
+   public LinkedList() {
+      head = null;
+      tail = null;
+   }
+}
